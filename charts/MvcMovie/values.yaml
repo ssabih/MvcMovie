@@ -7,14 +7,14 @@ image:
 service:
   name: dotnetcore
   type: ClusterIP
-  externalPort: 8080
+  externalPort: 80
   internalPort: 80
 resources:
   limits:
     cpu: 1
-    memory: 256Mi
+    memory: 512Mi
   requests:
-    cpu: 250m
-    memory: 256Mi
+    cpu: 500m
+    memory: 512Mi
 ingress:
   enabled: false
