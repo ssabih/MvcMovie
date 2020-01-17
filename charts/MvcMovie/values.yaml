@@ -6,7 +6,7 @@ image:
   pullPolicy: IfNotPresent
 service:
   name: dotnetcore
-  type: ClusterIP
+  type: LoadBalancer
   externalPort: 80
   internalPort: 80
 resources:
